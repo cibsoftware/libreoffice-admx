@@ -81,6 +81,9 @@
     <category name="PDFExport" displayName="$(string.category_PDFExport)">
         <parentCategory ref="Common" />
     </category>
+    <category name="CommonHelp" displayName="$(string.category_CommonHelp)">
+        <parentCategory ref="Common" />
+    </category>
     <category name="Writer" displayName="$(string.category_Writer)">
       <parentCategory ref="LibreOffice" />
     </category>
@@ -1228,6 +1231,21 @@
           <boolean id="Final" valueName="Final" />
         </elements>
       </policy>
+    <policy name="HelpExtendedTip" class="Both" displayName="$(string.name_HelpExtendedTip)" explainText="$(string.desc_HelpExtendedTip)" presentation="$(presentation.HelpExtendedTip)" key="Software\Policies\LibreOffice\org.openoffice.Office.Common\Help\ExtendedTip">
+      <parentCategory ref="CommonHelp" />
+      <supportedOn ref="supported_LibreOffice_4_2" />
+      <elements>
+        <boolean id="Value" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Final" valueName="Final" />
+      </elements>
+    </policy>
     <policy name="UseSystemPrintDialog" class="Both" displayName="$(string.name_UseSystemPrintDialog)" explainText="$(string.desc_UseSystemPrintDialog)" presentation="$(presentation.UseSystemPrintDialog)" key="Software\Policies\LibreOffice\org.openoffice.Office.Common\Misc\UseSystemPrintDialog">
       <parentCategory ref="FileandPrintdialogs" />
       <supportedOn ref="supported_LibreOffice_4_2" />

@@ -604,6 +604,10 @@ When any part is set to take from LDAP, then its value is LDAP attribute; LDAP c
         <string id="name_SelectPDFExport">Select the preferred PDF export options</string>
         <string id="desc_SelectPDFExport">Select the default PDF export options</string>
 
+        <string id="category_CommonHelp">Help</string>
+        <string id="name_HelpExtendedTip">Extended tips</string>
+        <string id="desc_HelpExtendedTip">Activates the extended help in tooltips</string>
+
         <string id="category_Writer">Writer</string>
         <string id="desc_SaveAsFormat">Always save in this document format. Please note that only Open Document Format (ODF) guarantees full data integrity.</string>
         <string id="odt">ODF Text Document</string>
@@ -2035,6 +2039,10 @@ Set paths in path lists have to be separated by spaces.</string>
       </presentation>
       <presentation id="SelectPDFExport">
           <checkBox refId="Value">Export all the PDF as PDF/A</checkBox>
+          <checkBox refId="Final">Final</checkBox>
+      </presentation>
+      <presentation id="HelpExtendedTip">
+          <checkBox refId="Value">Extended Tips</checkBox>
           <checkBox refId="Final">Final</checkBox>
       </presentation>
       <presentation id="TrySystemCredentialsFirst">
