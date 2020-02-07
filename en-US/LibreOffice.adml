@@ -623,6 +623,8 @@ The font heights are expressed in millimeters*100, which corresponds to the poin
 The font heights are expressed in millimeters*100, which corresponds to the point size multiplied by 35.2777. For example, to set font size to 12 points, set height to 423.</string>
         <string id="name_PrintEmptyPages">Print Empty Pages</string>
         <string id="desc_PrintEmptyPages">Specifies whether empty pages are printed.</string>
+        <string id="name_PrintSinglePrintJob">Create single print jobs</string>
+        <string id="desc_PrintSinglePrintJob">Controls the print output to avoid problems with duplex printing and odd page numbers.</string>
         <string id="name_AllSheets">Print only selected sheets</string>
         <string id="desc_AllSheets">Specifies whether all sheets are printed instead of only the selected sheets.</string>
         <string id="category_AutoText">AutoText</string>
@@ -1919,6 +1921,10 @@ Set paths in path lists have to be separated by spaces.</string>
       </presentation>
       <presentation id="PrintEmptyPages">
         <checkBox refId="Value">Print empty pages</checkBox>
+        <checkBox refId="Final">Final</checkBox>
+      </presentation>
+      <presentation id="PrintSinglePrintJob">
+        <checkBox refId="Value">Create single print jobs</checkBox>
         <checkBox refId="Final">Final</checkBox>
       </presentation>
       <presentation id="EnglishFunctionName">

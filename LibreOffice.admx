@@ -5563,6 +5563,21 @@
         <boolean id="Final" valueName="Final" />
       </elements>
     </policy>
+    <policy name="WriterPrintSinglePrintJob" class="Both" displayName="$(string.name_PrintSinglePrintJob)" explainText="$(string.desc_PrintSinglePrintJob)" presentation="$(presentation.PrintSinglePrintJob)" key="Software\Policies\LibreOffice\org.openoffice.Office.Writer\Print\Output\SinglePrintJob">
+      <parentCategory ref="WriterPrint" />
+      <supportedOn ref="supported_LibreOffice_4_2" />
+      <elements>
+        <boolean id="Value" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Final" valueName="Final" />
+      </elements>
+    </policy>
     <policy name="AllSheets" class="Both" displayName="$(string.name_AllSheets)" explainText="$(string.desc_AllSheets)" presentation="$(presentation.AllSheets)" key="Software\Policies\LibreOffice\org.openoffice.Office.Calc\Print\Page\AllSheets">
       <parentCategory ref="CalcPrint" />
       <supportedOn ref="supported_LibreOffice_4_2" />
