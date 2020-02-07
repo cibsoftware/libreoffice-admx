@@ -5623,6 +5623,21 @@
         <boolean id="Final" valueName="Final" />
       </elements>
     </policy>
+    <policy name="AutoTextApplyNumbering" class="Both" displayName="$(string.name_AutoTextApplyNumbering)" explainText="$(string.desc_AutoTextApplyNumbering)" presentation="$(presentation.AutoTextApplyNumbering)" key="Software\Policies\LibreOffice\org.openoffice.Office.Writer\AutoFunction\Format\ByInput\ApplyNumbering\Enable">
+      <parentCategory ref="AutoText" />
+      <supportedOn ref="supported_LibreOffice_4_2" />
+      <elements>
+        <boolean id="Value" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Final" valueName="Final" />
+      </elements>
+    </policy>
     <policy name="MSOFormsMenu" class="Both" displayName="$(string.name_MSOFormsMenu)" explainText="$(string.desc_MSOFormsMenu)" presentation="$(presentation.MSOFormsMenu)" key="Software\Policies\LibreOffice\org.openoffice.Office.Compatibility\View\MSCompatibleFormsMenu">
       <parentCategory ref="Forms" />
       <supportedOn ref="supported_LibreOffice_6_3" />

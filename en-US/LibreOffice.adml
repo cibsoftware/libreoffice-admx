@@ -630,6 +630,8 @@ The font heights are expressed in millimeters*100, which corresponds to the poin
         <string id="category_AutoText">AutoText</string>
         <string id="name_AutoTextShowTooltip">Suggestion</string>
         <string id="desc_AutoTextShowTooltip">Display remainder of name as suggestion while typing</string>
+        <string id="name_AutoTextApplyNumbering">Bulleted and numbered lists</string>
+        <string id="desc_AutoTextApplyNumbering">Specifies whether a numbered or bulleted text is created automatically while typing.</string>
         <string id="category_Forms">Forms</string>
         <string id="name_MSOFormsMenu">MS Office compatible form controls</string>
         <string id="desc_MSOFormsMenu">Specifies whether Form menu should be customized for a Microsoft Office compatible workflow. The Microsoft Office compatible Form menu contains only Microsoft Office compatible form controls.</string>
@@ -2033,6 +2035,10 @@ Set paths in path lists have to be separated by spaces.</string>
       </presentation>
       <presentation id="AutoTextShowTooltip">
           <checkBox refId="Value">Display remainder of name as suggestion while typing</checkBox>
+          <checkBox refId="Final">Final</checkBox>
+      </presentation>
+      <presentation id="AutoTextApplyNumbering">
+          <checkBox refId="Value">Create bulleted and numbered lists while type</checkBox>
           <checkBox refId="Final">Final</checkBox>
       </presentation>
       <presentation id="MSOFormsMenu">
