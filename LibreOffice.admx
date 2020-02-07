@@ -102,6 +102,9 @@
     <category name="Forms" displayName="$(string.category_Forms)">
       <parentCategory ref="Writer" />
     </category>
+    <category name="WriterTable" displayName="$(string.category_Table)">
+      <parentCategory ref="Writer" />
+    </category>
     <category name="Calc" displayName="$(string.category_Calc)">
       <parentCategory ref="LibreOffice" />
     </category>
@@ -5623,6 +5626,21 @@
     <policy name="MSOLockFiles" class="Both" displayName="$(string.name_MSOLockFiles)" explainText="$(string.desc_MSOLockFiles)" presentation="$(presentation.MSOLockFiles)" key="Software\Policies\LibreOffice\org.openoffice.Office.Common\Filter\Microsoft\Import\CreateMSOLockFiles">
       <parentCategory ref="LoadandSave" />
       <supportedOn ref="supported_LibreOffice_6_3" />
+      <elements>
+        <boolean id="Value" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Final" valueName="Final" />
+      </elements>
+    </policy>
+    <policy name="TableNumberRecognition" class="Both" displayName="$(string.name_TableNumberRecognition)" explainText="$(string.desc_TableNumberRecognition)" presentation="$(presentation.TableNumberRecognition)" key="Software\Policies\LibreOffice\org.openoffice.Office.Writer\Table\Input\NumberRecognition">
+      <parentCategory ref="WriterTable" />
+      <supportedOn ref="supported_LibreOffice_4_2" />
       <elements>
         <boolean id="Value" valueName="Value">
           <trueValue>

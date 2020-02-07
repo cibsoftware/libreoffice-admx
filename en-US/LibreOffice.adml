@@ -631,6 +631,9 @@ The font heights are expressed in millimeters*100, which corresponds to the poin
         <string id="category_Forms">Forms</string>
         <string id="name_MSOFormsMenu">MS Office compatible form controls</string>
         <string id="desc_MSOFormsMenu">Specifies whether Form menu should be customized for a Microsoft Office compatible workflow. The Microsoft Office compatible Form menu contains only Microsoft Office compatible form controls.</string>
+        <string id="category_Table">Table</string>
+        <string id="name_TableNumberRecognition">Number recognition</string>
+        <string id="desc_TableNumberRecognition">Specifies whether numbers in a table are recognized or if they are saved in a text format.</string>
 
         <string id="category_Calc">Calc</string>
         <string id="ods">ODF Spreadsheet</string>
@@ -2032,6 +2035,10 @@ Set paths in path lists have to be separated by spaces.</string>
       </presentation>
       <presentation id="MSOLockFiles">
           <checkBox refId="Value">Create MSO lock file</checkBox>
+          <checkBox refId="Final">Final</checkBox>
+      </presentation>
+      <presentation id="TableNumberRecognition">
+          <checkBox refId="Value">Recognize numbers in tables</checkBox>
           <checkBox refId="Final">Final</checkBox>
       </presentation>
     </presentationTable>
