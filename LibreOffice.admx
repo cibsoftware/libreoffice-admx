@@ -283,6 +283,21 @@
         <boolean id="Final" valueName="Final" />
       </elements>
     </policy>
+    <policy name="LoadPrinter" class="Both" displayName="$(string.name_LoadPrinter)" explainText="$(string.desc_LoadPrinter)" presentation="$(presentation.LoadPrinter)" key="Software\Policies\LibreOffice\org.openoffice.Office.Common\Save\Document\LoadPrinter">
+      <parentCategory ref="LoadandSave" />
+      <supportedOn ref="supported_LibreOffice_4_2" />
+      <elements>
+        <boolean id="Value" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Final" valueName="Final" />
+      </elements>
+    </policy>
     <policy name="WarnAlienFormat" class="Both" displayName="$(string.name_WarnAlienFormat)" explainText="$(string.desc_WarnAlienFormat)" presentation="$(presentation.WarnAlienFormat)" key="Software\Policies\LibreOffice\org.openoffice.Office.Common\Save\Document\WarnAlienFormat">
       <parentCategory ref="LoadandSave" />
       <supportedOn ref="supported_LibreOffice_4_2" />
