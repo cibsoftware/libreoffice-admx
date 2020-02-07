@@ -5638,6 +5638,14 @@
         <boolean id="Final" valueName="Final" />
       </elements>
     </policy>
+    <policy name="WordCompletionMinWordLen" class="Both" displayName="$(string.name_WordCompletionMinWordLen)" explainText="$(string.desc_WordCompletionMinWordLen)" presentation="$(presentation.WordCompletionMinWordLen)" key="Software\Policies\LibreOffice\org.openoffice.Office.Writer\AutoFunction\Completion\MinWordLen">
+      <parentCategory ref="AutoText" />
+      <supportedOn ref="supported_LibreOffice_4_2" />
+      <elements>
+        <text id="WordCompletionMinWordLenValue" key="Software\Policies\LibreOffice\org.openoffice.Office.Writer\AutoFunction\Completion\MinWordLen" valueName="Value" />
+        <boolean id="Final" valueName="Final" />
+      </elements>
+    </policy>
     <policy name="MSOFormsMenu" class="Both" displayName="$(string.name_MSOFormsMenu)" explainText="$(string.desc_MSOFormsMenu)" presentation="$(presentation.MSOFormsMenu)" key="Software\Policies\LibreOffice\org.openoffice.Office.Compatibility\View\MSCompatibleFormsMenu">
       <parentCategory ref="Forms" />
       <supportedOn ref="supported_LibreOffice_6_3" />
