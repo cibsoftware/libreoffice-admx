@@ -603,6 +603,8 @@ When any part is set to take from LDAP, then its value is LDAP attribute; LDAP c
         <string id="category_PDFExport">PDF export</string>
         <string id="name_SelectPDFExport">Select the preferred PDF export options</string>
         <string id="desc_SelectPDFExport">Select the default PDF export options</string>
+        <string id="name_PDFExportFormFields">Export form fields as widgets</string>
+        <string id="desc_PDFExportFormFields">Specifies whether form fields are exported as widgets or only their fixed print representation is exported.</string>
 
         <string id="category_CommonHelp">Help</string>
         <string id="name_HelpExtendedTip">Extended tips</string>
@@ -2039,6 +2041,10 @@ Set paths in path lists have to be separated by spaces.</string>
       </presentation>
       <presentation id="SelectPDFExport">
           <checkBox refId="Value">Export all the PDF as PDF/A</checkBox>
+          <checkBox refId="Final">Final</checkBox>
+      </presentation>
+      <presentation id="PDFExportFormFields">
+          <checkBox refId="Value">Export form fields as widgets</checkBox>
           <checkBox refId="Final">Final</checkBox>
       </presentation>
       <presentation id="HelpExtendedTip">
