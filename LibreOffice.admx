@@ -17,6 +17,7 @@
       <definition name="supported_LibreOffice_5_1" displayName="$(string.supported_LibreOffice_5_1)" />
       <definition name="supported_LibreOffice_5_3" displayName="$(string.supported_LibreOffice_5_3)" />
       <definition name="supported_LibreOffice_6_3" displayName="$(string.supported_LibreOffice_6_3)" />
+      <definition name="supported_LibreOffice_7_0" displayName="$(string.supported_LibreOffice_7_0)" />
     </definitions>
   </supportedOn>
   <categories>
@@ -2774,6 +2775,21 @@
     <policy name="DisableMacrosExecution" class="Both" displayName="$(string.name_DisableMacrosExecution)" explainText="$(string.desc_DisableMacrosExecution)" presentation="$(presentation.DisableMacrosExecution)" key="Software\Policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\DisableMacrosExecution">
       <parentCategory ref="Security" />
       <supportedOn ref="supported_LibreOffice_4_2" />
+      <elements>
+        <boolean id="Value" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Final" valueName="Final" />
+      </elements>
+    </policy>
+    <policy name="CheckDocumentEvents" class="Both" displayName="$(string.name_CheckDocumentEvents)" explainText="$(string.desc_CheckDocumentEvents)" presentation="$(presentation.CheckDocumentEvents)" key="Software\Policies\LibreOffice\org.openoffice.Office.Common\Security\Scripting\CheckDocumentEvents">
+      <parentCategory ref="Security" />
+      <supportedOn ref="supported_LibreOffice_7_0" />
       <elements>
         <boolean id="Value" valueName="Value">
           <trueValue>

@@ -15,6 +15,7 @@
         <string id="supported_LibreOffice_5_1">LibreOffice 5.1 or higher</string>
         <string id="supported_LibreOffice_5_3">LibreOffice 5.3 or higher</string>
         <string id="supported_LibreOffice_6_3">LibreOffice 6.3 or higher</string>
+        <string id="supported_LibreOffice_7_0">LibreOffice 7.0 or higher</string>
 
         <string id="ValueFlagsNone">None</string>
         <string id="ValueFlagsFinal">Final</string>
@@ -151,6 +152,8 @@ Default value: High</string>
         <string id="desc_DisableMacrosExecution">Specifies whether the macro execution is disabled in general. If it is set to true, the MacroSecurityLevel is ignored. If it is set to false, the mentioned entry specifies the level of macro security.
 
 Default value: Macros enabled</string>
+        <string id="name_CheckDocumentEvents">Check Document Events</string>
+        <string id="desc_CheckDocumentEvents">Warn on load when a document binds an event to a macro</string>
         <string id="name_EnableExpertConfiguration">Enable Expert Configuration</string>
         <string id="desc_EnableExpertConfiguration">Determines if the user has access to the entire configuration via the Expert Configuration button.</string>
         <string id="name_SecureURL">Trusted file locations</string>
@@ -1196,6 +1199,10 @@ Set paths in path lists have to be separated by spaces.</string>
       </presentation>
       <presentation id="DisableMacrosExecution">
         <checkBox refId="Value">Disable macro execution</checkBox>
+        <checkBox refId="Final">Final</checkBox>
+      </presentation>
+      <presentation id="CheckDocumentEvents">
+        <checkBox refId="Value">Check document events</checkBox>
         <checkBox refId="Final">Final</checkBox>
       </presentation>
       <presentation id="EnableExpertConfiguration">
