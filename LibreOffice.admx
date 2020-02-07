@@ -1246,6 +1246,21 @@
         <boolean id="Final" valueName="Final" />
       </elements>
     </policy>
+    <policy name="PDFExportPlaceholders" class="Both" displayName="$(string.name_PDFExportPlaceholders)" explainText="$(string.desc_PDFExportPlaceholders)" presentation="$(presentation.PDFExportPlaceholders)" key="Software\Policies\LibreOffice\org.openoffice.Office.Common\Filter\PDF\Export\ExportPlaceholders">
+      <parentCategory ref="PDFExport" />
+      <supportedOn ref="supported_LibreOffice_4_2" />
+      <elements>
+        <boolean id="Value" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Final" valueName="Final" />
+      </elements>
+    </policy>
     <policy name="HelpExtendedTip" class="Both" displayName="$(string.name_HelpExtendedTip)" explainText="$(string.desc_HelpExtendedTip)" presentation="$(presentation.HelpExtendedTip)" key="Software\Policies\LibreOffice\org.openoffice.Office.Common\Help\ExtendedTip">
       <parentCategory ref="CommonHelp" />
       <supportedOn ref="supported_LibreOffice_4_2" />
