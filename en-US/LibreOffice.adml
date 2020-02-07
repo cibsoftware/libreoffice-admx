@@ -89,6 +89,10 @@ When disabled, the warning will be issued in this case.</string>
         <string id="name_HistoryPickListSize">History Pick List Size</string>
         <string id="desc_HistoryPickListSize">Sets size of the picklist shown inside the Recent Documents menu.</string>
 
+        <string id="category_Jobs">Jobs</string>
+        <string id="name_UpdateCheckEnabled">Update check enabled</string>
+        <string id="desc_UpdateCheckEnabled">Enable automatic update check</string>
+
         <string id="category_Localization">Localization</string>
         <string id="name_DefaultLocale">Default document language (Western)</string>
         <string id="desc_DefaultLocale">Specifies the default document language - Western.</string>
@@ -2092,6 +2096,10 @@ Set paths in path lists have to be separated by spaces.</string>
       </presentation>
       <presentation id="TableNumberRecognition">
           <checkBox refId="Value">Recognize numbers in tables</checkBox>
+          <checkBox refId="Final">Final</checkBox>
+      </presentation>
+      <presentation id="UpdateCheckEnabled">
+          <checkBox refId="Value">Enable update check</checkBox>
           <checkBox refId="Final">Final</checkBox>
       </presentation>
     </presentationTable>

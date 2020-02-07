@@ -139,6 +139,9 @@
     <category name="ImpressDefaultTemplate" displayName="$(string.DefaultTemplate)">
       <parentCategory ref="Impress" />
     </category>
+    <category name="Jobs" displayName="$(string.category_Jobs)">
+      <parentCategory ref="LibreOffice" />
+    </category>
   </categories>
   <policies>
     <policy name="LDAPConfigBackendSettings" class="Both" displayName="$(string.name_LDAPConfigBackendSettings)" explainText="$(string.desc_LDAPConfigBackendSettings)" presentation="$(presentation.LDAPConfigBackendSettings)" key="Software\Policies\LibreOffice\org.openoffice.LDAP\UserDirectory">
@@ -5757,6 +5760,21 @@
     </policy>
     <policy name="TableNumberRecognition" class="Both" displayName="$(string.name_TableNumberRecognition)" explainText="$(string.desc_TableNumberRecognition)" presentation="$(presentation.TableNumberRecognition)" key="Software\Policies\LibreOffice\org.openoffice.Office.Writer\Table\Input\NumberRecognition">
       <parentCategory ref="WriterTable" />
+      <supportedOn ref="supported_LibreOffice_4_2" />
+      <elements>
+        <boolean id="Value" valueName="Value">
+          <trueValue>
+            <string>true</string>
+          </trueValue>
+          <falseValue>
+            <string>false</string>
+          </falseValue>
+        </boolean>
+        <boolean id="Final" valueName="Final" />
+      </elements>
+    </policy>
+    <policy name="UpdateCheckEnabled" class="Both" displayName="$(string.name_UpdateCheckEnabled)" explainText="$(string.desc_UpdateCheckEnabled)" presentation="$(presentation.UpdateCheckEnabled)" key="Software\Policies\LibreOffice\org.openoffice.Office.Jobs\Jobs\UpdateCheck\Arguments\AutoCheckEnabled">
+      <parentCategory ref="Jobs" />
       <supportedOn ref="supported_LibreOffice_4_2" />
       <elements>
         <boolean id="Value" valueName="Value">
